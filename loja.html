@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Loja JMS </title>
+    <title>Loja JMS</title>
 
     <style>
         body {
@@ -12,19 +12,19 @@
             text-align: center;
         }
 
-        header {
+        .cabecario {
             background: #000000;
             color: #FFD700;
             padding: 20px;
         }
 
-        nav a {
-            color: #FFD700; 
+        .cabecario a {
+            color: #FFD700;
             margin: 15px;
             text-decoration: none;
         }
 
-        nav a:hover {
+        .cabecario a:hover {
             color: #fff;
         }
 
@@ -42,19 +42,19 @@
         .produto {
             background: white;
             padding: 20px;
-            width: 250px; 
+            width: 250px;
             border-radius: 8px;
             border: 1px solid;
         }
 
         .produto img {
             width: 100%;
-            height: 250px;        /* altura fixa igual para todas */
-            object-fit: cover;    /* preenche o espaço sem distorcer */
+            height: 250px;
+            object-fit: cover;
             display: block;
             border-radius: 4px;
         }
-     
+
         button {
             background: #000000;
             color: #FFD700;
@@ -63,8 +63,9 @@
             cursor: pointer;
             margin-top: 10px;
         }
+
         button:hover {
-            background: #FFD700;    /* inverte ao passar o mouse (opcional) */
+            background: #FFD700;
             color: #000;
             border: 1px solid;
         }
@@ -73,51 +74,56 @@
 
 <body>
 
-    <header>
+    <div class="cabecario">
         <h1>Loja JMS</h1>
 
-        <nav>
-            <a href="#">Início</a>
-            <a href="#">Bolsas</a>
-            <a href="#">Contato</a>
-        </nav>
-    </header>
+        <div>
+            <a href="loja.html">Início</a>
+            <a href="bolsas.html">Bolsas</a>
+            <a href="contato.html">Contato</a>
+            <a href="sobre.html">Sobre</a>
+        </div>
+    </div>
 
-    <section class="inicio">
+    <div class="inicio">
+
         <h2>Bem-vindo à Loja JMS</h2>
         <p>Encontre a bolsa perfeita para você!</p>
 
         <div class="produtos-container">
 
             <div class="produto">
-            <img src="imagens/bolsaFeminina.jpg" alt="Bolsa bolsaFeminina">
-            <h3>Bolsa Feminina</h3>
-            <p>R$ 99,90</p>
-            <button>Comprar</button>
+                <img src="imagens/bolsaFeminina.jpg" alt="Bolsa bolsaFeminina">
+                <h3>Bolsa Feminina</h3>
+                <p>R$ 99,90</p>
+                <button>Comprar</button>
+            </div>
+
+            <div class="produto">
+                <img src="imagens/bolsaFemininaCasual.jpg" alt="Bolsa Feminina Casual">
+                <h3>Bolsa Feminina Casual</h3>
+                <p>R$ 79,90</p>
+                <button>Comprar</button>
+            </div>
+
+            <div class="produto">
+                <img src="imagens/mochilaInfantilTigre.jpg" alt="Bolsa Infantil Azul com Tigre">
+                <h3>Bolsa Infantil Tigre</h3>
+                <p>R$ 109,90</p>
+                <button>Comprar</button>
+            </div>
+
+            <div class="produto">
+                <img src="imagens/mochilaInfantilRoxaDino.jpg" alt="Bolsa Infantil Roxa com Dinossauro">
+                <h3>Bolsa Infantil</h3>
+                <p>R$ 109,90</p>
+                <button>Comprar</button>
+            </div>
+
         </div>
 
-        <div class="produto">
-            <img src="imagens/bolsaFemininaCasual.jpg" alt="Bolsa Feminina Casual">
-            <h3>Bolsa Feminina Casual</h3>
-            <p>R$ 79,90</p>
-            <button>Comprar</button>
-        </div>
-
-        <div class="produto">
-            <img src="imagens/mochilaInfantilTigre.jpg" alt="Bolsa Infantil Azul com Tigre">
-            <h3>Bolsa Infantil Tigre</h3>
-            <p>R$ 109,90</p>
-            <button>Comprar</button>
-        </div>
-
-         <div class="produto">
-            <img src="imagens/mochilaInfantilRoxaDino.jpg" alt="Bolsa Infantil Roxa com Dinossauro ">
-            <h3>Bolsa Infantil</h3>
-            <p>R$ 109,90</p>
-            <button>Comprar</button>
-        </div>
-
-    </section>
+    </div>
 
 </body>
+
 </html>

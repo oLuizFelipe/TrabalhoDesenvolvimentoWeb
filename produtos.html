@@ -18,12 +18,20 @@
             background: #000000;
             color: #FFD700;
             padding: 20px;
+            position: relative;
         }
 
         .cabecario a {
             color: #FFD700;
             margin: 15px;
             text-decoration: none;
+        }
+
+        .cabecario img {
+            width: 200px;
+            position: absolute;
+            left: 50px;
+            top: 25px;
         }
 
         .cabecario a:hover {
@@ -53,6 +61,13 @@
             display: block;
             border-radius: 4px;
         }
+
+        .produto img.produto-imagem-menor {
+            width: 90% ;
+            height: 270px;
+            object-fit: contain;
+            margin: auto;
+        }  
 
         button {
             background: #000000;
@@ -84,8 +99,12 @@
 
         <h1>Loja JMS</h1>
 
+        <a href="inicio.html">
+            <img src="imagens/jms_bolsas_logo_transparente.png" alt="logo com o nome jms bolsa">
+        </a>
+
         <div>
-            <a href="loja.html">Início</a>
+            <a href="inicio.html">Início</a>
             <a href="produtos.html">Produtos</a>
             <a href="contato.html">Contato</a>
             <a href="sobre.html">Sobre</a>
@@ -152,13 +171,34 @@
         </div>
 
         <div class="produto">
+            <img class="produto-imagem-menor" src="imagens/mochila_juvenil_azul.png" alt="Mochil juvenil azul">
+            <h3>Mochila Juvenil - Azul</h3>
+            <p>R$ 99,90</p>
+            <button>Comprar</button>
+        </div>
+
+        <div class="produto">
+            <img class="produto-imagem-menor" src="imagens/Mochila_palmeiras_S.png" alt="Mochila Palmeiras">
+            <h3>Mochila Palmeiras</h3>
+            <p>R$ 9,90</p>
+            <button>Comprar</button>
+        </div>
+
+        <div class="produto">
+            <img class="produto-imagem-menor" src="imagens/mochila_corinthians.png" alt="Mochila Corinthians">
+            <h3>Mochila Corinthians</h3>
+            <p>R$ 249,90</p>
+            <button>Comprar</button>
+        </div>
+
+        <div class="produto">
             <img src="imagens/malaTecidoCinza.jpg" alt="Mala Tecido Cinza">
             <h3>Mala Tecido - Cinza</h3>
             <p>R$ 349,90</p>
             <button>Comprar</button>
         </div>
 
-           <div class="produto">
+        <div class="produto">
             <img src="imagens/malaTecidoPreta.jpg" alt="Mala Tecido Preta">
             <h3>Mala Tecido - Preta</h3>
             <p>R$ 349,90</p>

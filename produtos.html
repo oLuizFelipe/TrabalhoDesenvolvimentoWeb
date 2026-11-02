@@ -1,356 +1,417 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produtos - Loja JMS</title>
+    <title>JMS Bolsas - Produtos</title>
 
-    <style>
-        body {
-            font-family: Arial;
-            margin: 0;
-            background: #FFD700;
-            text-align: center;
-        }
-
-        .cabecario {
-            background: #000000;
-            color: #FFD700;
-            padding: 20px;
-            position: relative;
-        }
-
-        .cabecario a {
-            color: #FFD700;
-            margin: 15px;
-            text-decoration: none;
-        }
-
-        .cabecario img {
-            width: 200px;
-            position: absolute;
-            left: 50px;
-            top: 25px;
-        }
-
-        .cabecario a:hover {
-            color: #fff;
-        }
-
-        .produtos-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            padding: 20px;
-        }
-
-        .produto {
-            background: white;
-            padding: 20px;
-            width: 250px;
-            border-radius: 8px;
-            border: 1px solid;
-        }
-
-        .produto img {
-            width: 100%;
-            height: 270px;
-            object-fit: cover;
-            display: block;
-            border-radius: 4px;
-        }
-
-        .produto img.produto-imagem-menor {
-            width: 90%;
-            height: 270px;
-            object-fit: contain;
-            margin: auto;
-        }
-
-        button {
-            background: #000000;
-            color: #FFD700;
-            border: 0;
-            padding: 10px 20px;
-            cursor: pointer;
-            margin-top: 10px;
-        }
-
-        button:hover {
-            background: #FFD700;
-            color: #000;
-            border: 1px solid;
-        }
-
-        .texto-rodape {
-            background: #000000;
-            color: #FFD700;
-            padding: 20px;
-            margin-top: 40px;
-        }
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-    <div class="cabecario">
+    <nav class="navbar navbar-expand-lg navbar-jms">
+        <div class="container">
+            <a class="navbar-brand" href="inicio.html">
+                <img src="imagens/jms_bolsas_logo_transparente.png" alt="JMS Bolsas" class="logo-jms">
+            </a>
 
-        <h1>Loja JMS</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuJMS">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <a href="inicio.html">
-            <img src="imagens/jms_bolsas_logo_transparente.png" alt="logo com o nome jms bolsa">
-        </a>
-
-        <div>
-            <a href="inicio.html">Início</a>
-            <a href="produtos.html">Produtos</a>
-            <a href="contato.html">Contato</a>
-            <a href="sobre.html">Sobre</a>
+            <div class="collapse navbar-collapse" id="menuJMS">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="inicio.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="produtos.html">Produtos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                </ul>
+            </div>
         </div>
+    </nav>
 
-    </div>
+    <main class="container my-5">
+        <h1 class="secao-titulo text-center mb-2">Nossos produtos</h1>
+        <p class="text-center text-muted mb-5">Confira nossas bolsas, mochilas e malas.</p>
 
+        <!-- BOLSAS -->
+        <h2 class="categoria-titulo mb-4">Bolsas</h2>
+        <div class="row g-4 mb-5">
 
-    <div class="produtos-container">
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                <div class="card produto-card h-100">
+                    <img src="imagens/bolsa_femininas/bolsaFeminina.jpg" class="card-img-top" alt="Bolsa feminina caramelo">
+                    <div class="card-body">
+                        <h5 class="card-title">Bolsa Feminina - Caramelo</h5>
+                        <p class="preco">R$ 99,90</p>
+                        <a href="https://wa.me/5511912548855" class="btn btn-jms w-100">Consultar</a>
+                    </div>
+                </div>
+            </div>
 
-        <div class="produto">
-            <img src="imagens/bolsa_femininas/bolsaFeminina.jpg" alt="Bolsa Feminina caramelo">
-            <h3>Bolsa Feminina - Caramelo</h3>
-            <p>R$ 99,90</p>
-            <button>Comprar</button>
-        </div>
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                <div class="card produto-card h-100">
+                    <img src="imagens/bolsa_femininas/bolsaFemininaCasual.jpg" class="card-img-top" alt="Bolsa feminina marrom">
+                    <div class="card-body">
+                        <h5 class="card-title">Bolsa Feminina - Marrom</h5>
+                        <p class="preco">R$ 79,90</p>
+                        <a href="https://wa.me/5511912548855" class="btn btn-jms w-100">Consultar</a>
+                    </div>
+                </div>
+            </div>
 
-        <div class="produto">
-            <img src="imagens/bolsa_femininas/bolsaFemininaCasual.jpg" alt="Bolsa Feminina Marrom">
-            <h3>Bolsa Feminina - Marrom</h3>
-            <p>R$ 79,90</p>
-            <button>Comprar</button>
-        </div>
-
-        <div class="produto">
-            <img src="imagens/bolsa_femininas/bolsaFemininaVermelha.jpg" alt="Bolsa Feminina Vermelha">
-            <h3>Bolsa Feminina Casual - Vermelha</h3>
-            <p>R$ 79,90</p>
-            <button>Comprar</button>
-        </div>
-
-        <div class="produto">
-            <img src="imagens/mochilas_infantil/mochilaInfantilTigre.jpg" alt="Mochila Infantil Azul com Tigre">
-            <h3>Mochila Infantil Tigre</h3>
-            <p>R$ 109,90</p>
-            <button>Comprar</button>
-        </div>
-
-
-        <div class="produto">
-            <img src="imagens/mochilas_infantil/mochilaInfantilRoxaDino.jpg" alt="Mochila Infantil Roxa com Dinossauro">
-            <h3>Mochila Infantil Dino</h3>
-            <p>R$ 109,90</p>
-            <button>Comprar</button>
-        </div>
-
-        <div class="produto">
-            <img src="imagens/mochilas_infantil/mochila_crianca_bob.png" alt="Mochila Infantil Bob Esponja">
-            <h3>Mochila Bob Esponja</h3>
-            <p>R$ 159,90</p>
-            <button>Comprar</button>
-        </div>
-
-        <div class="produto">
-            <img src="imagens/mochilas_infantil/mochila_crianca_colecao_stitch_azul.png" alt="Mochila Infantil Stitch Azul">
-            <h3>Mochila Stitch</h3>
-            <p>R$ 209,90</p>
-            <button>Comprar</button>
-        </div>
-
-        <div class="produto">
-            <img src="imagens/mochilas_infantil/mochila_crianca_stitch.png" alt="Mochila Infantil Stitch Havaiano">
-            <h3>Mochila Stitch Havaiano</h3>
-            <p>R$ 249,90</p>
-            <button>Comprar</button>
-        </div>
-
-        <div class="produto">
-            <img class="produto-imagem-menor" src="imagens/mochilas_infantil/mochila_crianca_colecao_angel.png" alt="Mochila Infantil Angel">
-            <h3>Mochila Angel</h3>
-            <p>R$ 209,90</p>
-            <button>Comprar</button>
-        </div>
-
-        <div class="produto">
-            <img src="imagens/mochilas_infantil/mochila_crianca_discovery_truck.png" alt="Mochila Infantil Discovery Truck">
-            <h3>Mochila Discovery Truck </h3>
-            <p>R$ 109,90</p>
-            <button>Comprar</button>
-        </div>
-
-        <div class="produto">
-            <img class="produto-imagem-menor" src="imagens/mochilas_infantil/mochila_crianca_space_action.png" alt="Mochila Infantil Foguete">
-            <h3>Mochila Foguete</h3>
-            <p>R$ 109,90</p>
-            <button>Comprar</button>
-        </div>
-
-        <div class="produto">
-            <img src="imagens/mochilas_masculinas/MochilaMasculinaAzul.jpg" alt="Mochila Masculina Azul">
-            <h3>Mochila Masculina - Azul</h3>
-            <p>R$ 109,90</p>
-            <button>Comprar</button>
-        </div>
-
-
-        <div class="produto">
-            <img src="imagens/mochilas_masculinas/MochilaMasculinaCinza.jpg" alt="Mochila Masculina Cinza">
-            <h3>Mochila Masculina - Cinza</h3>
-            <p>R$ 129,90</p>
-            <button>Comprar</button>
-        </div>
-
-
-        <div class="produto">
-            <img src="imagens/mochilas_masculinas/MochilaMasculinaPreta.jpg" alt="Mochila Masculina Preta">
-            <h3>Mochila Masculina - Preta</h3>
-            <p>R$ 149,90</p>
-            <button>Comprar</button>
-        </div>
-
-        <div class="produto">
-            <img class="produto-imagem-menor" src="imagens/mochilas_executivas/mochila_executiva_preta.png" alt="Mochila Executiva Preta">
-            <h3>Mochila Executiva - Preta</h3>
-            <p>R$ 249,90</p>
-            <button>Comprar</button>
-        </div>
-
-        <div class="produto">
-            <img class="produto-imagem-menor" src="imagens/mochilas_executivas/mochila_executiva_cinza.png" alt="Mochila Executiva Cinza">
-            <h3>Mochila Executiva - Cinza</h3>
-            <p>R$ 249,90</p>
-            <button>Comprar</button>
-        </div>
-
-        <div class="produto">
-            <img class="produto-imagem-menor" src="imagens/mochilas_executivas/mochila_executiva_verde.png" alt="Mochila Executiva Verde">
-            <h3>Mochila Executiva - Verde</h3>
-            <p>R$ 249,90</p>
-            <button>Comprar</button>
-        </div>
-
-        <div class="produto">
-            <img class="produto-imagem-menor" src="imagens/mochilas_juvenis/mochila_juvenil_azul.png" alt="Mochil juvenil azul">
-            <h3>Mochila Juvenil - Azul</h3>
-            <p>R$ 99,90</p>
-            <button>Comprar</button>
-        </div>
-
-        <div class="produto">
-            <img class="produto-imagem-menor" src="imagens/mochilas_juvenis/mochila_juvenil_preta.png" alt="Mochil juvenil preta">
-            <h3>Mochila Juvenil - Preta</h3>
-            <p>R$ 99,90</p>
-            <button>Comprar</button>
-        </div>
-
-        <div class="produto">
-            <img class="produto-imagem-menor" src="imagens/mochilas_juvenis/mochila_juvenil_vermelha.png" alt="Mochil juvenil vermelha">
-            <h3>Mochila Juvenil - Vermelha</h3>
-            <p>R$ 99,90</p>
-            <button>Comprar</button>
-        </div>
-
-        <div class="produto">
-            <img class="produto-imagem-menor" src="imagens/mochila_times/Mochila_palmeiras_S.png" alt="Mochila Palmeiras">
-            <h3>Mochila Palmeiras</h3>
-            <p>R$ 99,90</p>
-            <button>Comprar</button>
-        </div>
-
-        <div class="produto">
-            <img class="produto-imagem-menor" src="imagens/mochila_times/mochila_corinthians.png" alt="Mochila Corinthians">
-            <h3>Mochila Corinthians</h3>
-            <p>R$ 249,90</p>
-            <button>Comprar</button>
-        </div>
-
-        <div class="produto">
-            <img class="produto-imagem-menor" src="imagens/mochila_times/mochila_flamengo.png" alt="Mochila Flamengo">
-            <h3>Mochila Flamengo</h3>
-            <p>R$ 149,90</p>
-            <button>Comprar</button>
-        </div>
-
-        <div class="produto">
-            <img class="produto-imagem-menor" src="imagens/mochila_rabisk_s.png" alt="Mochila Rabisk">
-            <h3>Mochila Rabisk</h3>
-            <p>R$ 189,90</p>
-            <button>Comprar</button>
-        </div>
-
-        <div class="produto">
-            <img src="imagens/Mochila_shock_S.png" alt="Mochila Bola de Basquete">
-            <h3>Mochila Bola de Basquete</h3>
-            <p>R$ 149,90</p>
-            <button>Comprar</button>
-        </div>
-
-        <div class="produto">
-            <img src="imagens/malas/malaTecidoCinza.jpg" alt="Mala Tecido Cinza">
-            <h3>Mala Tecido - Cinza</h3>
-            <p>R$ 300,00</p>
-            <button>Comprar</button>
-        </div>
-
-        <div class="produto">
-            <img src="imagens/malas/malaTecidoPreta.jpg" alt="Mala Tecido Preta">
-            <h3>Mala Tecido - Preta</h3>
-            <p>R$ 300,00</p>
-            <button>Comprar</button>
-        </div>
-
-        <div class="produto">
-            <img class="produto-imagem-menor" src="imagens/malas/mala_preta_S.png" alt="Mala Fibra Preta">
-            <h3>Mala Fibra - Preta</h3>
-            <p>R$ 349,90</p>
-            <button>Comprar</button>
-        </div>
-
-        <div class="produto">
-            <img class="produto-imagem-menor" src="imagens/malas/mala_azul_S.png" alt="Mala Fibra Azul">
-            <h3>Mala Fibra - Azul</h3>
-            <p>R$ 349,90</p>
-            <button>Comprar</button>
-        </div>
-
-        <div class="produto">
-            <img class="produto-imagem-menor" src="imagens/malas/mala_rosa_S.png" alt="Mala Fibra Rose Gold">
-            <h3>Mala Fibra - Rose Gold</h3>
-            <p>R$ 349,90</p>
-            <button>Comprar</button>
-        </div>
-    </div>
-
-
-    <section>
-
-        <div class="texto-rodape">
-
-            <h2>JMS Bolsas Grajaú</h2>
-
-            <p>
-                Nosso compromisso é oferecer variedade,
-                praticidade e um atendimento de qualidade
-                para nossos clientes.
-            </p>
-
-            <p>
-                Conheça nossos produtos e encontre a opção
-                ideal para você.
-            </p>
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                <div class="card produto-card h-100">
+                    <img src="imagens/bolsa_femininas/bolsaFemininaVermelha.jpg" class="card-img-top" alt="Bolsa feminina vermelha">
+                    <div class="card-body">
+                        <h5 class="card-title">Bolsa Feminina Casual - Vermelha</h5>
+                        <p class="preco">R$ 79,90</p>
+                        <a href="https://wa.me/5511912548855" class="btn btn-jms w-100">Consultar</a>
+                    </div>
+                </div>
+            </div>
 
         </div>
 
-    </section>
+        <!-- MOCHILAS INFANTIS -->
+        <h2 class="categoria-titulo mb-4">Mochilas infantis</h2>
+        <div class="row g-4 mb-5">
 
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                <div class="card produto-card h-100">
+                    <img src="imagens/mochilas_infantil/mochilaInfantilTigre.jpg" class="card-img-top" alt="Mochila infantil tigre">
+                    <div class="card-body">
+                        <h5 class="card-title">Mochila Infantil Tigre</h5>
+                        <p class="preco">R$ 109,90</p>
+                        <a href="https://wa.me/5511912548855" class="btn btn-jms w-100">Consultar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                <div class="card produto-card h-100">
+                    <img src="imagens/mochilas_infantil/mochilaInfantilRoxaDino.jpg" class="card-img-top" alt="Mochila infantil dinossauro">
+                    <div class="card-body">
+                        <h5 class="card-title">Mochila Infantil Dino</h5>
+                        <p class="preco">R$ 109,90</p>
+                        <a href="https://wa.me/5511912548855" class="btn btn-jms w-100">Consultar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                <div class="card produto-card h-100">
+                    <img src="imagens/mochilas_infantil/mochila_crianca_bob.png" class="card-img-top" alt="Mochila Bob Esponja">
+                    <div class="card-body">
+                        <h5 class="card-title">Mochila Bob Esponja</h5>
+                        <p class="preco">R$ 159,90</p>
+                        <a href="https://wa.me/5511912548855" class="btn btn-jms w-100">Consultar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                <div class="card produto-card h-100">
+                    <img src="imagens/mochilas_infantil/mochila_crianca_colecao_stitch_azul.png" class="card-img-top" alt="Mochila Stitch azul">
+                    <div class="card-body">
+                        <h5 class="card-title">Mochila Stitch</h5>
+                        <p class="preco">R$ 209,90</p>
+                        <a href="https://wa.me/5511912548855" class="btn btn-jms w-100">Consultar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                <div class="card produto-card h-100">
+                    <img src="imagens/mochilas_infantil/mochila_crianca_stitch.png" class="card-img-top" alt="Mochila Stitch havaiano">
+                    <div class="card-body">
+                        <h5 class="card-title">Mochila Stitch Havaiano</h5>
+                        <p class="preco">R$ 249,90</p>
+                        <a href="https://wa.me/5511912548855" class="btn btn-jms w-100">Consultar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                <div class="card produto-card h-100">
+                    <img src="imagens/mochilas_infantil/mochila_crianca_colecao_angel.png" class="card-img-top" alt="Mochila Angel">
+                    <div class="card-body">
+                        <h5 class="card-title">Mochila Angel</h5>
+                        <p class="preco">R$ 209,90</p>
+                        <a href="https://wa.me/5511912548855" class="btn btn-jms w-100">Consultar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                <div class="card produto-card h-100">
+                    <img src="imagens/mochilas_infantil/mochila_crianca_discovery_truck.png" class="card-img-top" alt="Mochila Discovery Truck">
+                    <div class="card-body">
+                        <h5 class="card-title">Mochila Discovery Truck</h5>
+                        <p class="preco">R$ 109,90</p>
+                        <a href="https://wa.me/5511912548855" class="btn btn-jms w-100">Consultar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                <div class="card produto-card h-100">
+                    <img src="imagens/mochilas_infantil/mochila_crianca_space_action.png" class="card-img-top" alt="Mochila foguete">
+                    <div class="card-body">
+                        <h5 class="card-title">Mochila Foguete</h5>
+                        <p class="preco">R$ 109,90</p>
+                        <a href="https://wa.me/5511912548855" class="btn btn-jms w-100">Consultar</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- MOCHILAS MASCULINAS -->
+        <h2 class="categoria-titulo mb-4">Mochilas masculinas</h2>
+        <div class="row g-4 mb-5">
+
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                <div class="card produto-card h-100">
+                    <img src="imagens/mochilas_masculinas/MochilaMasculinaAzul.jpg" class="card-img-top" alt="Mochila masculina azul">
+                    <div class="card-body">
+                        <h5 class="card-title">Mochila Masculina - Azul</h5>
+                        <p class="preco">R$ 109,90</p>
+                        <a href="https://wa.me/5511912548855" class="btn btn-jms w-100">Consultar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                <div class="card produto-card h-100">
+                    <img src="imagens/mochilas_masculinas/MochilaMasculinaCinza.jpg" class="card-img-top" alt="Mochila masculina cinza">
+                    <div class="card-body">
+                        <h5 class="card-title">Mochila Masculina - Cinza</h5>
+                        <p class="preco">R$ 129,90</p>
+                        <a href="https://wa.me/5511912548855" class="btn btn-jms w-100">Consultar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                <div class="card produto-card h-100">
+                    <img src="imagens/mochilas_masculinas/MochilaMasculinaPreta.jpg" class="card-img-top" alt="Mochila masculina preta">
+                    <div class="card-body">
+                        <h5 class="card-title">Mochila Masculina - Preta</h5>
+                        <p class="preco">R$ 149,90</p>
+                        <a href="https://wa.me/5511912548855" class="btn btn-jms w-100">Consultar</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- MOCHILAS EXECUTIVAS -->
+        <h2 class="categoria-titulo mb-4">Mochilas executivas</h2>
+        <div class="row g-4 mb-5">
+
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                <div class="card produto-card h-100">
+                    <img src="imagens/mochilas_executivas/mochila_executiva_preta.png" class="card-img-top" alt="Mochila executiva preta">
+                    <div class="card-body">
+                        <h5 class="card-title">Mochila Executiva - Preta</h5>
+                        <p class="preco">R$ 249,90</p>
+                        <a href="https://wa.me/5511912548855" class="btn btn-jms w-100">Consultar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                <div class="card produto-card h-100">
+                    <img src="imagens/mochilas_executivas/mochila_executiva_cinza.png" class="card-img-top" alt="Mochila executiva cinza">
+                    <div class="card-body">
+                        <h5 class="card-title">Mochila Executiva - Cinza</h5>
+                        <p class="preco">R$ 249,90</p>
+                        <a href="https://wa.me/5511912548855" class="btn btn-jms w-100">Consultar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                <div class="card produto-card h-100">
+                    <img src="imagens/mochilas_executivas/mochila_executiva_verde.png" class="card-img-top" alt="Mochila executiva verde">
+                    <div class="card-body">
+                        <h5 class="card-title">Mochila Executiva - Verde</h5>
+                        <p class="preco">R$ 249,90</p>
+                        <a href="https://wa.me/5511912548855" class="btn btn-jms w-100">Consultar</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- MOCHILAS JUVENIS -->
+        <h2 class="categoria-titulo mb-4">Mochilas juvenis</h2>
+        <div class="row g-4 mb-5">
+
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                <div class="card produto-card h-100">
+                    <img src="imagens/mochilas_juvenis/mochila_juvenil_azul.png" class="card-img-top" alt="Mochila juvenil azul">
+                    <div class="card-body">
+                        <h5 class="card-title">Mochila Juvenil - Azul</h5>
+                        <p class="preco">R$ 99,90</p>
+                        <a href="https://wa.me/5511912548855" class="btn btn-jms w-100">Consultar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                <div class="card produto-card h-100">
+                    <img src="imagens/mochilas_juvenis/mochila_juvenil_preta.png" class="card-img-top" alt="Mochila juvenil preta">
+                    <div class="card-body">
+                        <h5 class="card-title">Mochila Juvenil - Preta</h5>
+                        <p class="preco">R$ 99,90</p>
+                        <a href="https://wa.me/5511912548855" class="btn btn-jms w-100">Consultar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                <div class="card produto-card h-100">
+                    <img src="imagens/mochilas_juvenis/mochila_juvenil_vermelha.png" class="card-img-top" alt="Mochila juvenil vermelha">
+                    <div class="card-body">
+                        <h5 class="card-title">Mochila Juvenil - Vermelha</h5>
+                        <p class="preco">R$ 99,90</p>
+                        <a href="https://wa.me/5511912548855" class="btn btn-jms w-100">Consultar</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- MOCHILAS DE TIMES E OUTROS MODELOS -->
+        <h2 class="categoria-titulo mb-4">Mochilas especiais</h2>
+        <div class="row g-4 mb-5">
+
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                <div class="card produto-card h-100">
+                    <img src="imagens/mochila_times/Mochila_palmeiras_S.png" class="card-img-top" alt="Mochila Palmeiras">
+                    <div class="card-body">
+                        <h5 class="card-title">Mochila Palmeiras</h5>
+                        <p class="preco">R$ 99,90</p>
+                        <a href="https://wa.me/5511912548855" class="btn btn-jms w-100">Consultar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                <div class="card produto-card h-100">
+                    <img src="imagens/mochila_times/mochila_corinthians.png" class="card-img-top" alt="Mochila Corinthians">
+                    <div class="card-body">
+                        <h5 class="card-title">Mochila Corinthians</h5>
+                        <p class="preco">R$ 249,90</p>
+                        <a href="https://wa.me/5511912548855" class="btn btn-jms w-100">Consultar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                <div class="card produto-card h-100">
+                    <img src="imagens/mochila_times/mochila_flamengo.png" class="card-img-top" alt="Mochila Flamengo">
+                    <div class="card-body">
+                        <h5 class="card-title">Mochila Flamengo</h5>
+                        <p class="preco">R$ 149,90</p>
+                        <a href="https://wa.me/5511912548855" class="btn btn-jms w-100">Consultar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                <div class="card produto-card h-100">
+                    <img src="imagens/mochila_rabisk_s.png" class="card-img-top" alt="Mochila Rabisk">
+                    <div class="card-body">
+                        <h5 class="card-title">Mochila Rabisk</h5>
+                        <p class="preco">R$ 189,90</p>
+                        <a href="https://wa.me/5511912548855" class="btn btn-jms w-100">Consultar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                <div class="card produto-card h-100">
+                    <img src="imagens/Mochila_shock_S.png" class="card-img-top" alt="Mochila bola de basquete">
+                    <div class="card-body">
+                        <h5 class="card-title">Mochila Bola de Basquete</h5>
+                        <p class="preco">R$ 149,90</p>
+                        <a href="https://wa.me/5511912548855" class="btn btn-jms w-100">Consultar</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- MALAS -->
+        <h2 class="categoria-titulo mb-4">Malas</h2>
+        <div class="row g-4 mb-5">
+
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                <div class="card produto-card h-100">
+                    <img src="imagens/malas/malaTecidoCinza.jpg" class="card-img-top" alt="Mala de tecido cinza">
+                    <div class="card-body">
+                        <h5 class="card-title">Mala Tecido - Cinza</h5>
+                        <p class="preco">R$ 300,00</p>
+                        <a href="https://wa.me/5511912548855" class="btn btn-jms w-100">Consultar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                <div class="card produto-card h-100">
+                    <img src="imagens/malas/malaTecidoPreta.jpg" class="card-img-top" alt="Mala de tecido preta">
+                    <div class="card-body">
+                        <h5 class="card-title">Mala Tecido - Preta</h5>
+                        <p class="preco">R$ 300,00</p>
+                        <a href="https://wa.me/5511912548855" class="btn btn-jms w-100">Consultar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                <div class="card produto-card h-100">
+                    <img src="imagens/malas/mala_preta_S.png" class="card-img-top" alt="Mala de fibra preta">
+                    <div class="card-body">
+                        <h5 class="card-title">Mala Fibra - Preta</h5>
+                        <p class="preco">R$ 349,90</p>
+                        <a href="https://wa.me/5511912548855" class="btn btn-jms w-100">Consultar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                <div class="card produto-card h-100">
+                    <img src="imagens/malas/mala_azul_S.png" class="card-img-top" alt="Mala de fibra azul">
+                    <div class="card-body">
+                        <h5 class="card-title">Mala Fibra - Azul</h5>
+                        <p class="preco">R$ 349,90</p>
+                        <a href="https://wa.me/5511912548855" class="btn btn-jms w-100">Consultar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                <div class="card produto-card h-100">
+                    <img src="imagens/malas/mala_rosa_S.png" class="card-img-top" alt="Mala de fibra rose gold">
+                    <div class="card-body">
+                        <h5 class="card-title">Mala Fibra - Rose Gold</h5>
+                        <p class="preco">R$ 349,90</p>
+                        <a href="https://wa.me/5511912548855" class="btn btn-jms w-100">Consultar</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="rodape text-center">
+        <p class="mb-0">&copy; 2026 JMS Bolsas. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>

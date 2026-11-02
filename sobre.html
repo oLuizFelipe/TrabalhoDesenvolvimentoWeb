@@ -1,240 +1,87 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
-    <title>Sobre - Loja JMS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JMS Bolsas - Sobre</title>
 
-    <style>
-        body {
-            font-family: Arial;
-            margin: 0;
-            background: #FFD700;
-            text-align: center;
-        }
-
-        .cabecario {
-            background: #000000;
-            color: #FFD700;
-            padding: 20px;
-            position: relative;
-        }
-
-        .cabecario img {
-            width: 200px;
-            position: absolute;
-            left: 50px;
-            top: 25px;
-        }
-
-        .cabecario a {
-            color: #FFD700;
-            margin: 15px;
-            text-decoration: none;
-        }
-
-        .cabecario a:hover {
-            color: #fff;
-        }
-
-        .sobre {
-            width: 80%;
-            margin: 30px auto;
-            text-align: center;
-        }
-
-        .sobre h1 {
-            font-size: 32px;
-        }
-
-        .texto {
-            width: 80%;
-            margin: 30px auto;
-            line-height: 1.6;
-        }
-
-        .categoria {
-            display: flex;
-            justify-content: space-around;
-            margin: 30px 0;
-        }
-
-        .item {
-            width: 250px;
-            padding: 20px;
-            border-radius: 8px;
-            color: #FFD700;
-            background-color:#000000;
-         
-        }
-
-        .item h2 {
-            color: #FFD700;
-        }
-
-        .texto-rodape {
-            background: #000000;
-            color: #FFD700;
-            padding: 20px;
-            margin-top: 40px;
-        }
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-    <div class="cabecario">
+    <nav class="navbar navbar-expand-lg navbar-jms">
+        <div class="container">
+            <a class="navbar-brand" href="inicio.html">
+                <img src="imagens/jms_bolsas_logo_transparente.png" alt="JMS Bolsas" class="logo-jms">
+            </a>
 
-        <h1>Loja JMS</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuJMS">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <a href="inicio.html">
-            <img src="imagens/jms_bolsas_logo_transparente.png" alt="logo com o nome jms bolsa">
-        </a>
-
-        <div>
-            <a href="inicio.html">Início</a>
-            <a href="produtos.html">Produtos</a>
-            <a href="contato.html">Contato</a>
-            <a href="sobre.html">Sobre</a>
+            <div class="collapse navbar-collapse" id="menuJMS">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="inicio.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="produtos.html">Produtos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="sobre.html">Sobre</a></li>
+                </ul>
+            </div>
         </div>
+    </nav>
 
-    </div>
+    <main class="container my-5">
+        <h1 class="secao-titulo text-center mb-4">Sobre a JMS Bolsas</h1>
 
-
-    <section class="sobre">
-
-        <div>
-            <h1>JMS Bolsas Grajaú: estilo e praticidade para o seu dia a dia</h1>
+        <section class="secao-pagina">
+            <h2>Quem somos</h2>
 
             <p>
-                Encontre bolsas, mochilas e acessórios para diferentes
-                momentos da sua rotina.
-            </p>
-        </div>
-
-
-        <div class="texto">
-
-            <p>
-                A JMS Bolsas Grajaú é uma loja criada para oferecer
-                produtos que unem estilo, praticidade e conforto.
-                Nosso objetivo é proporcionar aos clientes opções
+                A JMS Bolsas trabalha oferecendo opções de bolsas, mochilas e malas
                 para diferentes necessidades e ocasiões.
             </p>
 
             <p>
-                Em nossa loja você encontra diferentes modelos de
-                bolsas e mochilas, pensados para acompanhar a rotina,
-                os estudos, o trabalho e os momentos de lazer.
+                Nosso objetivo é oferecer variedade, praticidade e produtos que
+                atendam ao dia a dia dos nossos clientes.
             </p>
-
-            <p>
-                Buscamos sempre oferecer uma variedade de produtos
-                para que cada cliente possa encontrar uma opção que
-                combine com seu estilo e suas necessidades.
-            </p>
-
-        </div>
-
-
-        <section>
-
-            <div>
-                <h2>Conheça nossos produtos</h2>
-
-                <p>
-                    Confira algumas das opções disponíveis na
-                    JMS Bolsas Grajaú:
-                </p>
-            </div>
-
-
-            <div class="categoria">
-
-                <div class="item">
-
-                    <h2>Bolsas</h2>
-
-                    <p>
-                        Modelos para diferentes ocasiões,
-                        combinando praticidade e estilo.
-                    </p>
-
-                </div>
-
-
-                <div class="item">
-
-                    <h2>Mochilas</h2>
-
-                    <p>
-                        Opções para estudos, trabalho e
-                        atividades do dia a dia.
-                    </p>
-
-                </div>
-
-
-                <div class="item">
-
-                    <h2>Acessórios</h2>
-
-                    <p>
-                        Acessórios que ajudam a organizar
-                        e complementar sua rotina.
-                    </p>
-
-                </div>
-
-            </div>
-
         </section>
 
+        <section class="secao-pagina mt-4">
+            <h2>Nossas categorias</h2>
 
-        <section>
+            <div class="row g-4 mt-2">
 
-            <div class="texto">
+                <div class="col-12 col-md-4">
+                    <div class="info-card h-100 text-center">
+                        <h3>Bolsas</h3>
+                        <p>Modelos para diferentes estilos e ocasiões.</p>
+                    </div>
+                </div>
 
-                <h2>Para diferentes momentos</h2>
+                <div class="col-12 col-md-4">
+                    <div class="info-card h-100 text-center">
+                        <h3>Mochilas</h3>
+                        <p>Opções infantis, juvenis, masculinas e executivas.</p>
+                    </div>
+                </div>
 
-                <p>
-                    Seja para ir ao trabalho, estudar, viajar ou
-                    aproveitar um passeio, a JMS Bolsas Grajaú
-                    busca oferecer produtos que acompanhem
-                    diferentes momentos da sua rotina.
-                </p>
-
-                <p>
-                    Nossa proposta é unir praticidade e estilo
-                    em produtos que possam fazer parte do
-                    seu dia a dia.
-                </p>
+                <div class="col-12 col-md-4">
+                    <div class="info-card h-100 text-center">
+                        <h3>Malas</h3>
+                        <p>Modelos para acompanhar suas viagens.</p>
+                    </div>
+                </div>
 
             </div>
-
         </section>
-    </section>
+    </main>
 
-    <section>
+    <footer class="rodape text-center">
+        <p class="mb-0">&copy; 2026 JMS Bolsas. Todos os direitos reservados.</p>
+    </footer>
 
-        <div class="texto-rodape">
-
-            <h2>JMS Bolsas Grajaú</h2>
-
-            <p>
-                Nosso compromisso é oferecer variedade,
-                praticidade e um atendimento de qualidade
-                para nossos clientes.
-            </p>
-
-            <p>
-                Conheça nossos produtos e encontre a opção
-                ideal para você.
-            </p>
-
-        </div>
-
-    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>

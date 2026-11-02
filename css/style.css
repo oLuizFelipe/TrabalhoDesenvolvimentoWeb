@@ -1,0 +1,179 @@
+
+body {
+    background-color: #F4F4F4;
+    color: #292929;
+    font-family: Arial, sans-serif;
+}
+
+.navbar-jms {
+    background-color: #171717;
+    padding: 15px 0;
+    border-bottom: 4px solid #FFD500;
+}
+
+.logo-jms {
+    width: 130px;
+    height: auto;
+}
+
+.navbar-jms .nav-link {
+    color: #FFFFFF;
+    margin-left: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar-jms .nav-link:hover,
+.navbar-jms .nav-link.active {
+    color: #FFD500;
+}
+
+.navbar-toggler {
+    background-color: #FFD500;
+}
+
+.hero {
+    background: linear-gradient(135deg, #FFD500, #F2BD00);
+    color: #171717;
+    padding: 85px 20px;
+}
+
+.hero h1 {
+    color: #171717;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    color: #292929;
+    margin-bottom: 25px;
+}
+
+.secao-titulo {
+    color: #171717;
+    font-weight: bold;
+}
+
+.categoria-titulo {
+    color: #171717;
+    font-weight: bold;
+    border-left: 6px solid #FFD500;
+    padding-left: 12px;
+}
+
+.btn-jms {
+    background-color: #171717;
+    color: #FFD500;
+    border: 2px solid #171717;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-jms:hover {
+    background-color: #FFD500;
+    border-color: #171717;
+    color: #171717;
+}
+
+.produto-card {
+    background-color: #FFFFFF;
+    border: 1px solid #E2E2E2;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.produto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
+}
+
+.produto-card .card-img-top {
+    width: 100%;
+    height: 230px;
+    object-fit: contain;
+    padding: 12px;
+    background-color: #FFFFFF;
+}
+
+.produto-card .card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.produto-card .card-title {
+    color: #171717;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.preco {
+    color: #B38F00;
+    font-size: 19px;
+    font-weight: bold;
+    margin-top: auto;
+}
+
+.info-card {
+    background-color: #FFFFFF;
+    border: 1px solid #E2E2E2;
+    border-radius: 12px;
+    padding: 25px;
+    transition: box-shadow 0.3s;
+}
+
+.info-card:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.info-card h3 {
+    font-size: 21px;
+    font-weight: bold;
+    color: #B38F00;
+    margin-bottom: 15px;
+}
+
+.info-card p {
+    margin-bottom: 0;
+}
+
+.secao-pagina {
+    background-color: #FFFFFF;
+    border: 1px solid #E2E2E2;
+    border-radius: 12px;
+    padding: 30px;
+}
+
+.secao-pagina h2 {
+    color: #171717;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-left: 5px solid #FFD500;
+    padding-left: 12px;
+}
+
+.rodape {
+    background-color: #171717;
+    color: #FFFFFF;
+    padding: 25px 15px;
+    margin-top: 50px;
+    border-top: 4px solid #FFD500;
+}
+
+@media (max-width: 576px) {
+    .hero {
+        padding: 55px 15px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .logo-jms {
+        width: 110px;
+    }
+
+    .produto-card .card-img-top {
+        height: 200px;
+    }
+}

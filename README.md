@@ -1,4 +1,4 @@
-# 👜 JMS Bolsas Grajaú
+#JMS Bolsas Grajaú
 
 Projeto desenvolvido para a disciplina de **Desenvolvimento Web** da FATEC Zona Sul.
 

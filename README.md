@@ -4,37 +4,43 @@ Projeto desenvolvido para a disciplina de **Desenvolvimento Web** da FATEC Zona 
 
 ## 📌 Sobre o projeto
 
-O projeto consiste na criação de um site simples para a **JMS Bolsas Grajaú**, com o objetivo de apresentar a loja, seus produtos e informações de contato.
+O projeto consiste no desenvolvimento de um site para a **JMS Bolsas Grajaú**, com o objetivo de apresentar a loja, seus produtos e suas informações de contato.
 
-A primeira versão foi desenvolvida utilizando **HTML e CSS**, com foco na estruturação das páginas e na criação de uma identidade visual para a loja.
+O site passou por uma atualização visual e estrutural, utilizando Bootstrap para melhorar a organização dos elementos, a responsividade e a experiência de navegação.
 
 ## 📄 Páginas
 
 O site possui quatro páginas principais:
 
-- **Início** — apresentação da loja e alguns produtos.
-- **Produtos** — catálogo com os produtos disponíveis.
+- **Início** — apresentação da loja e exibição de produtos em destaque.
+- **Produtos** — catálogo com diferentes modelos de bolsas, mochilas e malas.
 - **Sobre** — informações sobre a JMS Bolsas Grajaú.
-- **Contato** — informações de contato, WhatsApp, Instagram e localização.
+- **Contato** — telefone, WhatsApp, Instagram e localização da loja.
 
-As páginas possuem um menu de navegação para facilitar o acesso entre elas.
+Todas as páginas possuem um menu de navegação responsivo, facilitando o acesso entre as seções.
 
 ## 🎨 Identidade visual
 
-O projeto utiliza principalmente:
+A identidade visual foi atualizada para destacar a marca e proporcionar uma navegação mais agradável.
 
-- Preto
-- Amarelo
-- Branco
+As principais cores utilizadas são:
 
-A identidade visual foi aplicada no cabeçalho, nos produtos e no rodapé das páginas.
+- Amarelo — cor principal da identidade visual.
+- Preto — utilizado no cabeçalho, botões e rodapé.
+- Branco — aplicado nos cards e elementos de conteúdo.
+- Cinza claro — utilizado no fundo das páginas.
 
 ## 💻 Tecnologias utilizadas
 
 - HTML5
 - CSS3
+- Bootstrap 5.3.8
 
-## 📁 Estrutura
+O Bootstrap foi utilizado para a construção do layout, organização dos elementos, criação dos cards de produtos e desenvolvimento do menu responsivo.
+
+O projeto não utiliza JavaScript próprio. Apenas o JavaScript oficial do Bootstrap é utilizado para o funcionamento do menu responsivo.
+
+## 📁 Estrutura do projeto
 
 ```text
 JMS Bolsas Grajaú/
@@ -44,6 +50,9 @@ JMS Bolsas Grajaú/
 ├── sobre.html
 ├── contato.html
 │
+├── css/
+│   └── style.css
+│
 └── imagens/
     ├── bolsa_femininas/
     ├── mochilas_infantil/
@@ -51,26 +60,44 @@ JMS Bolsas Grajaú/
     ├── mochilas_executivas/
     ├── mochilas_juvenis/
     ├── mochila_times/
-    └── malas/
+    ├── malas/
+    └── ...
 ```
 
 ## 🛍️ Produtos
 
-A página de produtos apresenta diferentes modelos de bolsas, mochilas e malas, organizados em cards com imagem, nome, preço e botão de compra.
+A página de produtos apresenta diferentes modelos de bolsas, mochilas e malas, organizados em cards contendo:
+
+- Imagem do produto;
+- Nome;
+- Preço;
+- Botão para consulta pelo WhatsApp.
+
+Os produtos estão organizados por categorias para facilitar a visualização do catálogo.
+
+## 📱 Responsividade
+
+O site utiliza recursos do Bootstrap para adaptar seu layout a diferentes tamanhos de tela, proporcionando uma melhor experiência tanto em computadores quanto em dispositivos móveis.
 
 ## 📞 Contato
 
-A página de contato apresenta telefone, WhatsApp, Instagram e localização da loja.
+A página de contato disponibiliza os principais canais de atendimento da loja:
 
-## 🎓 Objetivo
+- Telefone;
+- WhatsApp;
+- Instagram;
+- Localização pelo Google Maps.
 
-O objetivo do projeto foi aplicar os conhecimentos básicos de **desenvolvimento web**, trabalhando principalmente:
+## 🎓 Objetivo do projeto
 
-- Estrutura HTML;
+O objetivo é aplicar e aprimorar os conhecimentos de desenvolvimento web, trabalhando com:
+
+- Estruturação de páginas com HTML;
 - Estilização com CSS;
-- Navegação entre páginas;
-- Organização de conteúdo;
-- Criação de uma interface para uma loja.
+- Utilização do framework Bootstrap;
+- Criação de layouts responsivos;
+- Organização e apresentação de produtos;
+- Navegação entre páginas.
 
 ## 👨‍💻 Projeto acadêmico
 

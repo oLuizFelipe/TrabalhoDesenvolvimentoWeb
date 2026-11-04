@@ -55,6 +55,8 @@ JMS Bolsas Grajaú/
 │
 └── imagens/
     ├── bolsa_femininas/
+    ├── carteiras/
+    ├── estojos/
     ├── mochilas_infantil/
     ├── mochilas_masculinas/
     ├── mochilas_executivas/

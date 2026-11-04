@@ -46,50 +46,119 @@
         <section class="container my-5">
             <h2 class="secao-titulo text-center mb-4">Produtos em destaque</h2>
 
-            <div class="row g-4">
+            <div id="carrosselDestaques" class="carousel slide destaque-carrossel" data-bs-ride="carousel" data-bs-interval="6000">
 
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="card produto-card h-100">
-                        <img src="imagens/bolsa_femininas/bolsaFeminina.jpg" class="card-img-top" alt="Bolsa feminina caramelo">
-                        <div class="card-body">
-                            <h5 class="card-title">Bolsa Feminina - Caramelo</h5>
-                            <p class="preco">R$ 99,90</p>
-                            <a href="https://wa.me/5511912548855" class="btn btn-jms w-100">Consultar</a>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row g-4">
+                            <div class="col-12 col-md-6 col-lg-3">
+                                <div class="card produto-card h-100 position-relative">
+                                    <span class="etiqueta-destaque">Mais vendido</span>
+                                    <img src="imagens/bolsa_femininas/bolsaFeminina.jpg" class="card-img-top" alt="Bolsa feminina caramelo">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bolsa Feminina - Caramelo</h5>
+                                        <p class="preco">R$ 99,90</p>
+                                        <a href="https://wa.me/5511912548855" class="btn btn-jms w-100">Consultar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3">
+                                <div class="card produto-card h-100 position-relative">
+                                    <span class="etiqueta-destaque">Novidade</span>
+                                    <img src="imagens/mochilas_infantil/mochilaInfantilTigre.jpg" class="card-img-top" alt="Mochila infantil tigre">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Mochila Infantil Tigre</h5>
+                                        <p class="preco">R$ 109,90</p>
+                                        <a href="https://wa.me/5511912548855" class="btn btn-jms w-100">Consultar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3">
+                                <div class="card produto-card h-100 position-relative">
+                                    <span class="etiqueta-destaque">Mais vendido</span>
+                                    <img src="imagens/mochilas_executivas/mochila_executiva_preta.png" class="card-img-top" alt="Mochila executiva preta">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Mochila Executiva - Preta</h5>
+                                        <p class="preco">R$ 249,90</p>
+                                        <a href="https://wa.me/5511912548855" class="btn btn-jms w-100">Consultar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3">
+                                <div class="card produto-card h-100 position-relative">
+                                    <span class="etiqueta-destaque">Promoção</span>
+                                    <img src="imagens/malas/malaTecidoCinza.jpg" class="card-img-top" alt="Mala de tecido cinza">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Mala de Tecido - Cinza</h5>
+                                        <p class="preco">R$ 300,00</p>
+                                        <a href="https://wa.me/5511912548855" class="btn btn-jms w-100">Consultar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row g-4">
+                            <div class="col-12 col-md-6 col-lg-3">
+                                <div class="card produto-card h-100 position-relative">
+                                    <span class="etiqueta-destaque">Novidade</span>
+                                    <img src="imagens/mochilas_infantil/mochila_crianca_stitch.png" class="card-img-top" alt="Mochila Stitch havaiano">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Mochila Stitch Havaiano</h5>
+                                        <p class="preco">R$ 249,90</p>
+                                        <a href="https://wa.me/5511912548855" class="btn btn-jms w-100">Consultar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3">
+                                <div class="card produto-card h-100 position-relative">
+                                    <span class="etiqueta-destaque">Promoção</span>
+                                    <img src="imagens/mochilas_masculinas/MochilaMasculinaPreta.jpg" class="card-img-top" alt="Mochila masculina preta">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Mochila Masculina - Preta</h5>
+                                        <p class="preco">R$ 149,90</p>
+                                        <a href="https://wa.me/5511912548855" class="btn btn-jms w-100">Consultar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3">
+                                <div class="card produto-card h-100 position-relative">
+                                    <span class="etiqueta-destaque">Mais vendido</span>
+                                    <img src="imagens/mochila_times/Mochila_palmeiras_S.png" class="card-img-top" alt="Mochila Palmeiras">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Mochila Palmeiras</h5>
+                                        <p class="preco">R$ 99,90</p>
+                                        <a href="https://wa.me/5511912548855" class="btn btn-jms w-100">Consultar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3">
+                                <div class="card produto-card h-100 position-relative">
+                                    <span class="etiqueta-destaque">Novidade</span>
+                                    <img src="imagens/malas/mala_rosa_S.png" class="card-img-top" alt="Mala de fibra rose gold">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Mala Fibra - Rose Gold</h5>
+                                        <p class="preco">R$ 349,90</p>
+                                        <a href="https://wa.me/5511912548855" class="btn btn-jms w-100">Consultar</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="card produto-card h-100">
-                        <img src="imagens/mochilas_infantil/mochilaInfantilTigre.jpg" class="card-img-top" alt="Mochila infantil tigre">
-                        <div class="card-body">
-                            <h5 class="card-title">Mochila Infantil Tigre</h5>
-                            <p class="preco">R$ 109,90</p>
-                            <a href="https://wa.me/5511912548855" class="btn btn-jms w-100">Consultar</a>
-                        </div>
-                    </div>
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carrosselDestaques" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carrosselDestaques" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
 
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="card produto-card h-100">
-                        <img src="imagens/mochilas_executivas/mochila_executiva_preta.png" class="card-img-top" alt="Mochila executiva preta">
-                        <div class="card-body">
-                            <h5 class="card-title">Mochila Executiva - Preta</h5>
-                            <p class="preco">R$ 249,90</p>
-                            <a href="https://wa.me/5511912548855" class="btn btn-jms w-100">Consultar</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="card produto-card h-100">
-                        <img src="imagens/malas/malaTecidoCinza.jpg" class="card-img-top" alt="Mala de tecido cinza">
-                        <div class="card-body">
-                            <h5 class="card-title">Mala de Tecido - Cinza</h5>
-                            <p class="preco">R$ 300,00</p>
-                            <a href="https://wa.me/5511912548855" class="btn btn-jms w-100">Consultar</a>
-                        </div>
-                    </div>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carrosselDestaques" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Destaques 1 a 4"></button>
+                    <button type="button" data-bs-target="#carrosselDestaques" data-bs-slide-to="1" aria-label="Destaques 5 a 8"></button>
                 </div>
 
             </div>
